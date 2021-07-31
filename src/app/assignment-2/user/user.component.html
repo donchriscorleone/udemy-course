@@ -1,0 +1,9 @@
+<input type="text" [(ngModel)]="username" class="form-control" />
+<p>{{ username }}</p>
+<button
+  class="btn btn-primary"
+  (click)="onClick()"
+  [disabled]="isUsernameEmpty()"
+>
+  Submit
+</button>
